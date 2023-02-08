@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #000000;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+	
+
+		.border {
+			border: 1px solid #000000;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="Lembretes e anotações" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-lightbulb"></i> Lembretes e anotações</a>
+		<a id="Disciplinas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Disciplinas</a>
+		<a id="Lista de Tarefas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Lista de Tarefas</a>
+		<a id="Calendário" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i> Calendário</a>
+		<a id="Cronograma" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-clock"></i> Cronograma</a>
+		<a id="Área de Estudo" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brain"></i> Área de Estudo</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Home')
+				window.open("https://www.notion.so/Turma-ITA-2023-b1ca660bb01f4365ac452c10d046320e", '_blank').focus();
+			else if (id == "Lembretes e anotações")
+				window.open("https://www.notion.so/Turma-ITA-2023-b1ca660bb01f4365ac452c10d046320e#55f5b3d6706c4d52aeb681e560ffe696", '_blank').focus();
+			else if (id == "Disciplinas")
+				window.open("https://www.notion.so/Turma-ITA-2023-b1ca660bb01f4365ac452c10d046320e#21dc015ab2644641bff01ea1ae14e6a3", '_blank').focus();
+			else if (id == "Lista de Tarefas")
+				window.open("https://www.notion.so/a98c600cfb9c422e93b9607069fd5536?v=9a38fb0b8c0d4317a30c5848a409c444", '_blank').focus();
+			else if (id == "Calendário")
+				window.open("https://www.notion.so/b4a6806a7a1b41da9e44c082ff0650c7?v=d48acdba0fc04c359044c92ae8ac6d98", '_blank').focus();
+			else if (id == "Cronograma")
+				window.open("https://www.notion.so/Turma-ITA-2023-b1ca660bb01f4365ac452c10d046320e#db4d804ad23549d4a106d479a27a7d5a", '_blank').focus();
+			else if (id == "Área de Estudo")
+				window.open("https://www.notion.so/Turma-ITA-2023-b1ca660bb01f4365ac452c10d046320e#f81f66335b7c4801965117347b222da3", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
